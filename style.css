@@ -1,0 +1,161 @@
+body {
+  background-color: #F8F8F8;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+span {
+  color: #7F7D00; 
+}
+
+h2 {
+  color: #7F7D00;
+}
+
+.container p span {
+  color: #7F7D00; 
+  font-weight: bold; 
+  text-decoration: none; 
+}
+
+.skill-title {
+  font-size: 2.25rem; 
+  font-weight: bold; 
+  color: #7F7D00;
+}
+
+.custom-div {
+  border: 2px solid #7F7D00; 
+  color: #7F7D00;
+  padding: 0.5rem 1rem; 
+  background-color: white; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+  border-radius: 0.375rem;
+  text-align: center; 
+}
+
+.title-certif {
+  color: #7F7D00;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-card {
+  position: relative;
+  width: 300px;
+  height: 200px; 
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.certificate-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover .certificate-image {
+  transform: scale(1.05);
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff; 
+  border-radius: 8px; 
+  max-width: 90%; 
+  max-height: 90%; 
+  overflow: auto; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.title-project {
+  color: #7F7D00;
+}
+
+.custom-div:hover {
+  background-color: #7F7D00; 
+  color: white; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 1rem; 
+}
+
+.custom-button {
+  background-color: #7F7D00;
+  color: white; 
+  padding: 0.5rem 1rem; 
+  border: none; 
+  border-radius: 0.375rem; 
+  margin: 2px;
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.custom-button:hover {
+  background-color: #3b6a25; 
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #7F7D00;
+  color: white;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; 
+      height: auto; 
+  }
+
+  .nav-text {
+      font-size: 1.2rem; 
+      margin: 5px 0; 
+  }
+}
